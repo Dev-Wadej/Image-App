@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap');
+.containerAnimate {
+    font-variation-settings: 'wght' 100;
+    letter-spacing: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.containerAnimate span {
+    animation: letterWave 1s ease-in-out infinite alternate;
+}
+
+.containerAnimate span:nth-child(1) {
+    animation-delay: .5s;
+}
+
+.containerAnimate span:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.containerAnimate span:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.containerAnimate span:nth-child(4) {
+    animation-delay: 1.7s;
+}
+
+.containerAnimate span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+span {
+    user-select: none;
+    color: #2f3f5f;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+}
+
+@keyframes letterWave {
+    to {
+        font-variation-settings: 'wght' 700;
+        letter-spacing: 1px;
+    }
+}
